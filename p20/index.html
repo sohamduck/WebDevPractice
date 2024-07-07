@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picture Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="product">
+        <div class="product-small-img">
+            <img src="pics/img0.jpg" onclick="myFunction(this)" alt="">
+            <img src="pics/img1.jpg" onclick="myFunction(this)" alt="">
+            <img src="pics/img2.jpg" onclick="myFunction(this)" alt="">
+            <img src="pics/img3.jpg" onclick="myFunction(this)" alt="">
+            <img src="pics/img4.jpg" onclick="myFunction(this)" alt="">
+            <img src="pics/img5.jpg" onclick="myFunction(this)" alt="">
+        </div>
+        <div class="img-container">
+            <img id="imageBox" src="pics/img1.jpg" alt="">
+        </div>
+        <!-- <div class="product-info">
+            <div class="product-head">
+                <h1>Men Solid Polo Neck Cotton Blend Green T-Shirt</h1>
+            </div>
+            <div class="product-text">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed eveniet, amet in necessitatibus sint consequatur quibusdam laboriosam accusamus labore autem officia cupiditate dicta numquam quia minima ex delectus. Laborum, quam.</p>
+                <ul>
+                    <li>Lorem ipsum dolor sit, amet !</li>
+                    <li>Lorem ipsum dolor sitomerightnowt, amet !</li>
+                    <li>Lorem ipaskikskassum dolor sit, amet !</li>
+                </ul>
+            </div>
+            <div class="product-foot">
+                <div class="one">4.5*</div>
+                <div class="two">11,000 ratings and 2500 reviews</div>
+                <div class="extra">Rs. 397</div>
+            </div> -->
+        <!-- </div> -->
+    </div>
+    <script>
+        function myFunction(smallImg){
+            var fullImg=document.getElementById("imageBox");
+            fullImg.src=smallImg.src;
+        }
+    </script>
+</body>
+</html>
